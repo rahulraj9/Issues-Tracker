@@ -1,0 +1,18 @@
+{
+  "name": "issuetracker",
+  "version": "1.0.0",
+  "description": "The Issue Tracker is a web-based application designed to streamline project management by allowing teams to efficiently track and manage issues and bugs associated with their projects. With a user-friendly interface, robust functionality, and customizable features, it simplifies the process of issue tracking and collaboration.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Raj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  }
+}
