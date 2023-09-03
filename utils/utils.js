@@ -1,4 +1,5 @@
 const Project = require('../model/CreateProjectModel')
+const Issue = require('../model/Issues.model')
 
 const SaveProject = async (data) => {
   try {
@@ -9,6 +10,16 @@ const SaveProject = async (data) => {
     throw error;
   }
 };
+const SaveIssue = async (issueData) => {
+  try {
+    const issue = new Issue(issueData);
+    await issue.save();
+    return issue;
+  } catch (error) {
+    throw error;
+  }
+};
 module.exports = {
-    SaveProject
+    SaveProject,
+    SaveIssue
 }
